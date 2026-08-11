@@ -16,6 +16,7 @@ public class AlllinksForSearching {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[@role='button']")).click();
 		List<WebElement> alllinks = driver.findElements(By.xpath("//a"));
+		driver.quit();
 	}
 
 }
