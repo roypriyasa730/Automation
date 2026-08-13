@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class MouseHover {
-
 	public static void main(String[] args) throws InterruptedException {
         WebDriver d= new ChromeDriver();
         d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -18,12 +17,14 @@ public class MouseHover {
 		WebElement element = d.findElement(By.id("companyDropdown"));
 		Actions a =new Actions(d);
 		a.moveToElement(element).perform();
+		
 		d.findElement(By.xpath("//a[text()='Contact Us']")).click();
-	String phone=	d.findElement(By.xpath("//p[contains(text(),'9243602352')]")).getText();
-	System.out.println(phone);
-	Thread.sleep(4000);
-	d.quit();
+	    String phone=	d.findElement(By.xpath("//p[contains(text(),'9243602352')]")).getText();
+	    System.out.println(phone);
+	    Thread.sleep(4000);
+    	d.quit();
 
 	}
+	
 
 }
