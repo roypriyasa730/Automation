@@ -25,8 +25,6 @@ public class DragAndDrop {
 			 a.dragAndDrop(src, dest).perform();
 			 Thread.sleep(4000);
 		    	d.quit();
-			 
-			
 			
 	}
 
