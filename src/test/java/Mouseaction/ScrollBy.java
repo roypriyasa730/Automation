@@ -19,10 +19,7 @@ package Mouseaction;
 
 		        driver.get("https://www.bbc.com/");
 
-		       // int yaxis = driver.findElement(
-		               By.xpath("//h2[text()='Watch']")
-		       ).getLocation().getY();
-
+		      
 		        JavascriptExecutor j = (JavascriptExecutor) driver;
 
 		        Thread.sleep(3000);
