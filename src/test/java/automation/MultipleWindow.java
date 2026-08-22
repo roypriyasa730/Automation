@@ -1,4 +1,4 @@
-package Automation;
+package automation;
 
 import java.time.Duration;
 import java.util.Set;

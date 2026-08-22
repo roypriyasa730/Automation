@@ -1,4 +1,4 @@
-package Mouseaction;
+package mouseaction;
 
 	import java.time.Duration;
 	import org.openqa.selenium.JavascriptExecutor;

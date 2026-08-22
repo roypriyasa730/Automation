@@ -1,4 +1,4 @@
-package Automation;
+package automation;
 
 import java.awt.AWTException;
 import java.awt.Robot;
