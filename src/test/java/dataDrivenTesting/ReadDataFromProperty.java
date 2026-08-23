@@ -25,7 +25,7 @@ public class ReadDataFromProperty {
 		        Thread.sleep(6000);
 
 		        driver.quit();
-		    }
+		    } 
 		
 	}
 
