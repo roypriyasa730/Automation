@@ -12,7 +12,7 @@ public class ReadDataFromExcelRow {
 	        FileInputStream fis = new FileInputStream(
 	                "./src/test/resources/Testsdata/customerapitestingdata.xlsx");
 
-	        XSSFWorkbook workbook = new XSSFWorkbook(fis);
+	       
 
 	        Sheet sheet = workbook.getSheet("Sheet1");
 
