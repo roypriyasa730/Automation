@@ -1,15 +1,19 @@
 package dataDrivenTesting;
+import java.awt.Desktop;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadDataFromExcelRow {
-	 public static void main(String[] args) throws IOException {
+	 public static void main(String[] args) throws IOException, InterruptedException {
 
 	        FileInputStream fis = new FileInputStream(
 	                "./src/test/resources/Testsdata/customerapitestingdata.xlsx");
+	        File file = new File ("./src/test/resources/Testsdata/customerapitestingdata.xlsx");
+	        Desktop.getDesktop().open(file);
 
-	        Workbook workbook = new XSSFWorkbook(fis);
+	        XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
 	        Sheet sheet = workbook.getSheet("Sheet1");
 
@@ -25,7 +29,7 @@ public class ReadDataFromExcelRow {
 	        System.out.println(username);
 	        System.out.println(password);
 	        System.out.println(email);
-
+Thread.sleep(5000);
 	        workbook.close();
 	        fis.close();
 	    }
