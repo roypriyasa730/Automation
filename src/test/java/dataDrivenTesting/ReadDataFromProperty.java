@@ -1,5 +1,7 @@
 package dataDrivenTesting;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -13,10 +15,10 @@ public class ReadDataFromProperty {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		WebDriver driver=new ChromeDriver();
-		
-		FileInputStream fis = new FileInputStream("./src/test/resources/Testdata/config.properties");
-		        Properties p = new Properties();
-
+		 FileInputStream fis = new FileInputStream(
+	                "./src/test/resources/Testsdata/customerapitestingdata.xlsx");
+	        File file = new File ("./src/test/resources/Testsdata/customerapitestingdata.xlsx");
+	        Desktop.getDesktop().open(file);
 		        p.load(fis);
 
 		        String data = p.getProperty("url");
