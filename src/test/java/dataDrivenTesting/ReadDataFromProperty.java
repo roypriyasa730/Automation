@@ -20,4 +20,6 @@ public class ReadDataFromProperty {
 
 		p.load(fis);
 		String url = p.getProperty("url"); 
-		System.out.println(url); fis.close(); } }
+		System.out.println(url); fis.close();
+		}
+	}
