@@ -14,20 +14,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ReadDataFromProperty {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		WebDriver driver=new ChromeDriver();
-		 FileInputStream fis = new FileInputStream(
-	                "./src/test/resources/Testsdata/customerapitestingdata.xlsx");
-	        File file = new File ("./src/test/resources/Testsdata/customerapitestingdata.xlsx");
-	        Desktop.getDesktop().open(file);
-		        p.load(fis);
+		Properties p = new Properties();
+		FileInputStream fis = new FileInputStream
+				( "./src/test/resources/Testsdata/customerdata.properties");
 
-		        String data = p.getProperty("url");
-		        System.out.println(p.getProperty("browser"));
-
-		        Thread.sleep(6000);
-
-		        driver.quit();
-		    } 
-		
-	}
-
+		p.load(fis);
+		String url = p.getProperty("url"); 
+		System.out.println(url); fis.close(); } }
