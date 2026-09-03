@@ -1,10 +1,11 @@
 package testngScripts;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class Demo {
-@Test(priority=5)
+@Test(priority=5,dependsOnMethods="deleteCoustomer")
 public void createCoustomer() {
 
 	Reporter.log("Coustomer Create successfully",true);
@@ -13,6 +14,7 @@ public void createCoustomer() {
 
 @Test(priority=4)
 public void deleteCoustomer() {
+	Assert.fail();
 	Reporter.log("Coustomer Deleted successfully",true);
 }
 @Test(priority=3)
