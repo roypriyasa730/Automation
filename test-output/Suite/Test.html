@@ -1,0 +1,921 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/5/5</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 04 12:59:07 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (61 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.deleteCoustomer()'><b>deleteCoustomer</b><br>Test class: testngScripts.modifyCoustomer</td>
+<td><div><pre>java.lang.AssertionError: 
+	at testngScripts.modifyCoustomer.deleteCoustomer(modifyCoustomer.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1748876332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1748876332'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:70)
+	at testngScripts.modifyCoustomer.deleteCoustomer(modifyCoustomer.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.deleteCoustomer()'><b>deleteCoustomer</b><br>Test class: testngScripts.updateoustomer</td>
+<td><div><pre>java.lang.AssertionError: 
+	at testngScripts.updateoustomer.deleteCoustomer(updateoustomer.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace689745064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace689745064'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:70)
+	at testngScripts.updateoustomer.deleteCoustomer(updateoustomer.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.deleteCoustomer()'><b>deleteCoustomer</b><br>Test class: testngScripts.addCoutomar</td>
+<td><div><pre>java.lang.AssertionError: 
+	at testngScripts.addCoutomar.deleteCoustomer(addCoutomar.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1753127384", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1753127384'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:70)
+	at testngScripts.addCoutomar.deleteCoustomer(addCoutomar.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.deleteCoustomer()'><b>deleteCoustomer</b><br>Test class: testngScripts.createCoustomar</td>
+<td><div><pre>java.lang.AssertionError: 
+	at testngScripts.createCoustomar.deleteCoustomer(createCoustomar.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace282496973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace282496973'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:70)
+	at testngScripts.createCoustomar.deleteCoustomer(createCoustomar.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.Demo.deleteCoustomer()'><b>deleteCoustomer</b><br>Test class: testngScripts.Demo</td>
+<td><div><pre>java.lang.AssertionError: 
+	at testngScripts.Demo.deleteCoustomer(Demo.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2012744708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2012744708'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:70)
+	at testngScripts.Demo.deleteCoustomer(Demo.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testngScripts.addCoutomar.modifyCoustomer()'><b>modifyCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-1146825051" onClick='toggleBox("Output-1146825051", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1146825051" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1146825051">
+Coustomer Modify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.vrifyCoustomer()'><b>vrifyCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-1313916817" onClick='toggleBox("Output-1313916817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1313916817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1313916817">
+Coustomer Vrify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-202125197" onClick='toggleBox("Output-202125197", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-202125197" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-202125197">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-1759899303" onClick='toggleBox("Output-1759899303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1759899303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1759899303">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.modifyCoustomer<br/>
+<a href="#Output-365590665" onClick='toggleBox("Output-365590665", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-365590665" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-365590665">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-954702563" onClick='toggleBox("Output-954702563", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-954702563" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-954702563">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.vrifyCoustomer()'><b>vrifyCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-1982787818" onClick='toggleBox("Output-1982787818", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1982787818" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1982787818">
+Coustomer Vrify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-1665620686" onClick='toggleBox("Output-1665620686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1665620686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1665620686">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-1444635922" onClick='toggleBox("Output-1444635922", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1444635922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1444635922">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.Demo.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-989447607" onClick='toggleBox("Output-989447607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-989447607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-989447607">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-811301908" onClick='toggleBox("Output-811301908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-811301908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-811301908">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.Demo.modifyCoustomer()'><b>modifyCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-940584193" onClick='toggleBox("Output-940584193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-940584193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-940584193">
+Coustomer Modify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.vrifyCoustomer()'><b>vrifyCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-1239807799" onClick='toggleBox("Output-1239807799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1239807799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1239807799">
+Coustomer Vrify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.addcreateCoustomer()'><b>addcreateCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-1550261631" onClick='toggleBox("Output-1550261631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1550261631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1550261631">
+Coustomer Add successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.Demo.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-279593458" onClick='toggleBox("Output-279593458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-279593458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-279593458">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.modifyCoustomer()'><b>modifyCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-758119607" onClick='toggleBox("Output-758119607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-758119607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-758119607">
+Coustomer Modify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-1866850137" onClick='toggleBox("Output-1866850137", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866850137" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866850137">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.modifyCoustomer<br/>
+<a href="#Output-2063763486" onClick='toggleBox("Output-2063763486", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2063763486" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2063763486">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.Demo.vrifyCoustomer()'><b>vrifyCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-931675031" onClick='toggleBox("Output-931675031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-931675031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-931675031">
+Coustomer Vrify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.Demo.addcreateCoustomer()'><b>addcreateCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-111900554" onClick='toggleBox("Output-111900554", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-111900554" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-111900554">
+Coustomer Add successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.modifyCoustomer<br/>
+<a href="#Output-515715487" onClick='toggleBox("Output-515715487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515715487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515715487">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.Demo.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-249034932" onClick='toggleBox("Output-249034932", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-249034932" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-249034932">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-391630194" onClick='toggleBox("Output-391630194", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-391630194" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-391630194">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.modifyCoustomer()'><b>modifyCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-2044215423" onClick='toggleBox("Output-2044215423", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044215423" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044215423">
+Coustomer Modify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.addcreateCoustomer()'><b>addcreateCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-838449246" onClick='toggleBox("Output-838449246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-838449246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-838449246">
+Coustomer Add successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-1762902523" onClick='toggleBox("Output-1762902523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1762902523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1762902523">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.addcreateCoustomer()'><b>addcreateCoustomer</b><br>Test class: testngScripts.modifyCoustomer<br/>
+<a href="#Output-1850777594" onClick='toggleBox("Output-1850777594", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1850777594" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1850777594">
+Coustomer Add successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.addcreateCoustomer()'><b>addcreateCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-1966124444" onClick='toggleBox("Output-1966124444", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1966124444" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1966124444">
+Coustomer Add successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-1661406123" onClick='toggleBox("Output-1661406123", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1661406123" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1661406123">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.vrifyCoustomer()'><b>vrifyCoustomer</b><br>Test class: testngScripts.modifyCoustomer<br/>
+<a href="#Output-220309324" onClick='toggleBox("Output-220309324", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-220309324" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-220309324">
+Coustomer Vrify successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.createCoustomar<br/>
+<a href="#Output-689654773" onClick='toggleBox("Output-689654773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689654773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689654773">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+<tr>
+<td title='testngScripts.updateoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.updateoustomer<br/>
+<a href="#Output-1233705144" onClick='toggleBox("Output-1233705144", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1233705144" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1233705144">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.modifyCoustomer<br/>
+<a href="#Output-2053591126" onClick='toggleBox("Output-2053591126", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2053591126" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2053591126">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-649329985" onClick='toggleBox("Output-649329985", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-649329985" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-649329985">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.modifyCoustomer<br/>
+<a href="#Output-1007412025" onClick='toggleBox("Output-1007412025", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1007412025" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1007412025">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.Demo.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-925308434" onClick='toggleBox("Output-925308434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-925308434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-925308434">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-775386112" onClick='toggleBox("Output-775386112", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-775386112" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-775386112">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.Demo.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.Demo<br/>
+<a href="#Output-1278254413" onClick='toggleBox("Output-1278254413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1278254413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1278254413">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.updateCoustomer()'><b>updateCoustomer</b><br>Test class: testngScripts.addCoutomar<br/>
+<a href="#Output-1955920234" onClick='toggleBox("Output-1955920234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1955920234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1955920234">
+Coustomer Update successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testngScripts.updateoustomer.createCoustomer()'><b>createCoustomer</b><br>Test class: testngScripts.updateoustomer</td>
+<td><div><pre>java.lang.Throwable: Method testngScripts.updateoustomer.createCoustomer() on instance testngScripts.updateoustomer@72f926e6 depends on not successfully finished methods 
+[testngScripts.updateoustomer.deleteCoustomer() on instance testngScripts.updateoustomer@72f926e6]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace525968792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace525968792'><pre>java.lang.Throwable: Method testngScripts.updateoustomer.createCoustomer() on instance testngScripts.updateoustomer@72f926e6 depends on not successfully finished methods 
+[testngScripts.updateoustomer.deleteCoustomer() on instance testngScripts.updateoustomer@72f926e6]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.updateoustomer@72f926e6</td></tr>
+<tr>
+<td title='testngScripts.addCoutomar.createCoustomer()'><b>createCoustomer</b><br>Test class: testngScripts.addCoutomar</td>
+<td><div><pre>java.lang.Throwable: Method testngScripts.addCoutomar.createCoustomer() on instance testngScripts.addCoutomar@3d51f06e depends on not successfully finished methods 
+[testngScripts.addCoutomar.deleteCoustomer() on instance testngScripts.addCoutomar@3d51f06e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789718525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789718525'><pre>java.lang.Throwable: Method testngScripts.addCoutomar.createCoustomer() on instance testngScripts.addCoutomar@3d51f06e depends on not successfully finished methods 
+[testngScripts.addCoutomar.deleteCoustomer() on instance testngScripts.addCoutomar@3d51f06e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.addCoutomar@3d51f06e</td></tr>
+<tr>
+<td title='testngScripts.modifyCoustomer.createCoustomer()'><b>createCoustomer</b><br>Test class: testngScripts.modifyCoustomer</td>
+<td><div><pre>java.lang.Throwable: Method testngScripts.modifyCoustomer.createCoustomer() on instance testngScripts.modifyCoustomer@3427b02d depends on not successfully finished methods 
+[testngScripts.modifyCoustomer.deleteCoustomer() on instance testngScripts.modifyCoustomer@3427b02d]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace40075281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40075281'><pre>java.lang.Throwable: Method testngScripts.modifyCoustomer.createCoustomer() on instance testngScripts.modifyCoustomer@3427b02d depends on not successfully finished methods 
+[testngScripts.modifyCoustomer.deleteCoustomer() on instance testngScripts.modifyCoustomer@3427b02d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.modifyCoustomer@3427b02d</td></tr>
+<tr>
+<td title='testngScripts.Demo.createCoustomer()'><b>createCoustomer</b><br>Test class: testngScripts.Demo</td>
+<td><div><pre>java.lang.Throwable: Method testngScripts.Demo.createCoustomer() on instance testngScripts.Demo@7ed7259e depends on not successfully finished methods 
+[testngScripts.Demo.deleteCoustomer() on instance testngScripts.Demo@7ed7259e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1552999801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1552999801'><pre>java.lang.Throwable: Method testngScripts.Demo.createCoustomer() on instance testngScripts.Demo@7ed7259e depends on not successfully finished methods 
+[testngScripts.Demo.deleteCoustomer() on instance testngScripts.Demo@7ed7259e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.Demo@7ed7259e</td></tr>
+<tr>
+<td title='testngScripts.createCoustomar.createCoustomer()'><b>createCoustomer</b><br>Test class: testngScripts.createCoustomar</td>
+<td><div><pre>java.lang.Throwable: Method testngScripts.createCoustomar.createCoustomer() on instance testngScripts.createCoustomar@28eaa59a depends on not successfully finished methods 
+[testngScripts.createCoustomar.deleteCoustomer() on instance testngScripts.createCoustomar@28eaa59a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1840903588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1840903588'><pre>java.lang.Throwable: Method testngScripts.createCoustomar.createCoustomer() on instance testngScripts.createCoustomar@28eaa59a depends on not successfully finished methods 
+[testngScripts.createCoustomar.deleteCoustomer() on instance testngScripts.createCoustomar@28eaa59a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testngScripts.createCoustomar@28eaa59a</td></tr>
+</table><p>
+</body>
+</html>
