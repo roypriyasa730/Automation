@@ -13,7 +13,7 @@ public class modifyCoustomer {
 		Reporter.log("Coustomer Create successfully",true);
 	}
 
-	@Test(priority=4)
+	@Test(priority=4,groups="Regresstion")
 	public void deleteCoustomer() {
 		AssertJUnit.fail();
 		Reporter.log("Coustomer Deleted successfully",true);

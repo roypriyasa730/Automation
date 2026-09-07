@@ -11,7 +11,7 @@ public void createCoustomer() {
 	Reporter.log("Coustomer Create successfully",true);
 }
 
-@Test(priority=4)
+@Test(priority=4 ,groups="Regresstion")
 public void deleteCoustomer() {
 	AssertJUnit.fail();
 	Reporter.log("Coustomer Deleted successfully",true);
@@ -24,7 +24,7 @@ public void addcreateCoustomer() {
 public void updateCoustomer() {
 	Reporter.log("Coustomer Update successfully",true);
 }
-@Test(priority=1)
+@Test(priority=1 ,groups="Regresstion")
 public void modifyCoustomer() {
 	Reporter.log("Coustomer Modify successfully",true);
 }

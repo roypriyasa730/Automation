@@ -18,7 +18,7 @@ public class createCoustomar {
 		AssertJUnit.fail();
 		Reporter.log("Coustomer Deleted successfully",true);
 	}
-	@Test(priority=3)
+	@Test(priority=3 )
 	public void addcreateCoustomer() {
 		Reporter.log("Coustomer Add successfully",true);
 	}
