@@ -26,8 +26,7 @@ public class Capturingscreenshot {
 		Files.copy(Src, dest);
 		Thread.sleep(3000);
 		driver.quit();
-		
-		
+			
 	}
 	}
 
