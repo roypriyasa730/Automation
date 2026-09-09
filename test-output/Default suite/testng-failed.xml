@@ -3,12 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngScripts.Demo">
+      <class name="testngScripts.BaseClassUtilization">
         <methods>
-          <include name="deleteCoustomer"/>
-          <include name="createCoustomer"/>
+          <include name="clickOnSetting"/>
+          <include name="connectwithdatabase"/>
+          <include name="launchBrowser"/>
+          <include name="logintoactitime"/>
+          <include name="disconnectfromdatabase"/>
+          <include name="closebrowser"/>
+          <include name="clickOnTasks"/>
+          <include name="logoutfromactitime"/>
         </methods>
-      </class> <!-- testngScripts.Demo -->
+      </class> <!-- testngScripts.BaseClassUtilization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

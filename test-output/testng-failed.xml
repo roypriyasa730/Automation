@@ -1,38 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngScripts.modifyCoustomer">
+      <class name="testngScripts.BaseClassUtilization">
         <methods>
-          <include name="createCoustomer"/>
-          <include name="deleteCoustomer"/>
+          <include name="clickOnSetting"/>
+          <include name="connectwithdatabase"/>
+          <include name="launchBrowser"/>
+          <include name="logintoactitime"/>
+          <include name="disconnectfromdatabase"/>
+          <include name="closebrowser"/>
+          <include name="clickOnTasks"/>
+          <include name="logoutfromactitime"/>
         </methods>
-      </class> <!-- testngScripts.modifyCoustomer -->
-      <class name="testngScripts.createCoustomar">
-        <methods>
-          <include name="createCoustomer"/>
-          <include name="deleteCoustomer"/>
-        </methods>
-      </class> <!-- testngScripts.createCoustomar -->
-      <class name="testngScripts.addCoutomar">
-        <methods>
-          <include name="createCoustomer"/>
-          <include name="deleteCoustomer"/>
-        </methods>
-      </class> <!-- testngScripts.addCoutomar -->
-      <class name="testngScripts.updateoustomer">
-        <methods>
-          <include name="createCoustomer"/>
-          <include name="deleteCoustomer"/>
-        </methods>
-      </class> <!-- testngScripts.updateoustomer -->
-      <class name="testngScripts.Demo">
-        <methods>
-          <include name="deleteCoustomer"/>
-          <include name="createCoustomer"/>
-        </methods>
-      </class> <!-- testngScripts.Demo -->
+      </class> <!-- testngScripts.BaseClassUtilization -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

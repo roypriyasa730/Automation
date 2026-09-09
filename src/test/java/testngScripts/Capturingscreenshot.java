@@ -27,6 +27,6 @@ public class Capturingscreenshot {
 		Thread.sleep(3000);
 		driver.quit();
 			
-	}₹r 
+	}
 	}
 

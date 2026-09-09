@@ -1,17 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
+    <line>
+      <![CDATA[database connected successfully]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-09-08T13:49:30 IST" name="Default suite" finished-at="2026-09-08T13:50:41 IST" duration-ms="71413">
+  <suite started-at="2026-09-09T14:48:43 IST" name="Default suite" finished-at="2026-09-09T14:48:45 IST" duration-ms="2167">
     <groups>
     </groups>
-    <test started-at="2026-09-08T13:49:30 IST" name="Default test" finished-at="2026-09-08T13:50:41 IST" duration-ms="71413">
-      <class name="testngScripts.Capturingscreenshot">
-        <test-method signature="CaptureScreenshot()[pri:0, instance:testngScripts.Capturingscreenshot@c33b74f]" started-at="2026-09-08T13:49:30 IST" name="CaptureScreenshot" finished-at="2026-09-08T13:50:41 IST" duration-ms="71395" status="PASS">
+    <test started-at="2026-09-09T14:48:43 IST" name="Default test" finished-at="2026-09-09T14:48:45 IST" duration-ms="2167">
+      <class name="testngScripts.BaseClassUtilization">
+        <test-method is-config="true" signature="connectwithdatabase()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:43 IST" name="connectwithdatabase" finished-at="2026-09-09T14:48:43 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[database connected successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectwithdatabase -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:43 IST" name="launchBrowser" finished-at="2026-09-09T14:48:45 IST" duration-ms="2140" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:249)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:366)
+at com.Actitime.generic.Library.Baseclass.launchBrowser(Baseclass.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CaptureScreenshot -->
-      </class> <!-- testngScripts.Capturingscreenshot -->
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="clickOnSetting()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="clickOnSetting" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:249)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:366)
+at com.Actitime.generic.Library.Baseclass.launchBrowser(Baseclass.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSetting -->
+        <test-method is-config="true" signature="logintoactitime()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="logintoactitime" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoactitime -->
+        <test-method is-config="true" signature="logoutfromactitime()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="logoutfromactitime" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromactitime -->
+        <test-method is-config="true" signature="logintoactitime()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="logintoactitime" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoactitime -->
+        <test-method signature="clickOnTasks()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="clickOnTasks" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:249)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:366)
+at com.Actitime.generic.Library.Baseclass.launchBrowser(Baseclass.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnTasks -->
+        <test-method is-config="true" signature="logoutfromactitime()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="logoutfromactitime" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromactitime -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="closebrowser" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="disconnectfromdatabase()[pri:0, instance:testngScripts.BaseClassUtilization@4fb0f2b9]" started-at="2026-09-09T14:48:45 IST" name="disconnectfromdatabase" finished-at="2026-09-09T14:48:45 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectfromdatabase -->
+      </class> <!-- testngScripts.BaseClassUtilization -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
