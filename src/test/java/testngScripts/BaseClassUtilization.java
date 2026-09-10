@@ -11,14 +11,14 @@ import com.Actitime.generic.Library.Baseclass;
 public class BaseClassUtilization extends Baseclass{
 	@Test
 	public void clickOnTasks() {
-					driver.findElement(By.xpath("//span[text()='Tasts']")).click();
+					driver.findElement(By.xpath("//span[text()='Tas']")).click();
 			Reporter.log("clicked on Task",true);
 	}
 	
 	@Test
 	public void clickOnSetting() {
-		driver.findElement(By.xpath("//span[text()='Settings']")).click();
-		Reporter.log("Clicked on Settings",true);
+		driver.findElement(By.xpath("//span[text()='Reports']")).click();
+		Reporter.log("Clicked on Reports",true);
 	}
 
 }

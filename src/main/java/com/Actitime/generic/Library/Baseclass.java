@@ -35,7 +35,7 @@ public class Baseclass {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        String url = f.readDataFromProperty("url");
+        String url = f.readDataFromProperty("Url");
 
         driver.get(url);
 
@@ -45,11 +45,11 @@ public class Baseclass {
     @BeforeMethod
     public void logintoactitime() throws IOException {
 
-        String un = f.readDataFromProperty("username");
+        String un = f.readDataFromProperty("Username");
 
         driver.findElement(By.id("username")).sendKeys(un);
 
-        String pw = f.readDataFromProperty("password");
+        String pw = f.readDataFromProperty("Password");
 
         driver.findElement(By.name("pwd")).sendKeys(pw);
 

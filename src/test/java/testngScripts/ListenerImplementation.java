@@ -1,10 +1,15 @@
 package testngScripts;
 
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.Actitime.generic.Library.Baseclass;
+import com.google.common.io.Files;
 
 
 public class ListenerImplementation extends Baseclass implements ITestListener {
@@ -21,14 +26,20 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailure(result);
+		TakesScreenshot t=(TakesScreenshot)driver;
+		File Src =t.getScreenshotAs(OutputType.FILE);
+		File dest =new File("./Screenshot/"+nameoftestscript+".png"); 
+		 try {
+			 Files.copy(Src, dest);
+			 
+		 }catch(IoException e) {
+			 e.printDtackTrace
+		 }
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSkipped(result);
+		
 	}
 
 	@Override
