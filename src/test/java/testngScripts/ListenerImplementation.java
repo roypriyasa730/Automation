@@ -1,6 +1,7 @@
 package testngScripts;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -29,13 +30,11 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 		TakesScreenshot t=(TakesScreenshot)driver;
 		File Src =t.getScreenshotAs(OutputType.FILE);
 		File dest =new File("./Screenshot/"+nameoftestscript+".png"); 
-		 try {
-			 Files.copy(Src, dest);
-			 
-		 }catch(IoException e) {
-			 e.printDtackTrace;
-		 }
-	}
+		try {
+			Files.copy(Src, dest);
+		} catch (IOException e) {
+			e.printStackTrace()
+		}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
