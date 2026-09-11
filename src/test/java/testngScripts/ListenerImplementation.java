@@ -26,7 +26,7 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult result) {
+	public void onTestFailure(ITestResult result, String nameoftestscript) {
 		TakesScreenshot t=(TakesScreenshot)driver;
 		File Src =t.getScreenshotAs(OutputType.FILE);
 		File dest =new File("./Screenshot/"+nameoftestscript+".png"); 
