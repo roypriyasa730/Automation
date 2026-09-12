@@ -26,15 +26,16 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult result, String nameoftestscript) {
+	public void onTestFailure(ITestResult result) {
 		TakesScreenshot t=(TakesScreenshot)driver;
 		File Src =t.getScreenshotAs(OutputType.FILE);
 		File dest =new File("./Screenshot/"+nameoftestscript+".png"); 
 		try {
 			Files.copy(Src, dest);
 		} catch (IOException e) {
-			e.printStackTrace()
+			e.printStackTrace();
 		}
+
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
