@@ -29,11 +29,12 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		TakesScreenshot t=(TakesScreenshot)driver;
 		File Src =t.getScreenshotAs(OutputType.FILE);
-		File dest =new File("./Screenshot/"+nameoftestscript+".png"); 
+		File dest = new File("./Screenshot/" + result.getName() + ".png");
 		try {
 			Files.copy(Src, dest);
 		} catch (IOException e) {
-			e.printStackTrace();
+			  e.printStackTrace();
+		}
 		}
 
 
