@@ -13,7 +13,7 @@ public class addCoutomar {
 
 	@Test(priority = 4)
 	public void deleteCoustomer() {
-		AssertJUnit.fail();
+		Assert.fail();
 		Reporter.log("Coustomer Deleted successfully", true);
 	}
 
