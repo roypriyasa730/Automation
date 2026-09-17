@@ -15,18 +15,17 @@ import com.google.common.io.Files;
 public class Capturingscreenshot {
 
 	@Test
-	public void CaptureScreenshot() throws IOException, InterruptedException{ 
-		WebDriver driver =new ChromeDriver();
-		driver .manage().window().maximize();
+	public void CaptureScreenshot() throws IOException, InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://www.myntra.com/");
-		TakesScreenshot t =(TakesScreenshot)driver;
-		File Src=t.getScreenshotAs(OutputType.FILE);
-		File dest=new File("./Screenshot/ss.png");
+		TakesScreenshot t = (TakesScreenshot) driver;
+		File Src = t.getScreenshotAs(OutputType.FILE);
+		File dest = new File("./Screenshot/ss.png");
 		Files.copy(Src, dest);
 		Thread.sleep(3000);
 		driver.quit();
-			
-	}
-	}
 
+	}
+}
