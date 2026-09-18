@@ -22,6 +22,7 @@ public class DropdownDemo {
         WebElement month = d.findElement(By.id("month"));
 
         Select s = new Select(month);
+        Select s = new Select(month);
 
         s.selectByVisibleText("May");
 
