@@ -1,6 +1,7 @@
 package mouseaction;
 
 import java.time.Duration;
+import java.util.Objects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,14 +15,13 @@ public class DropdownDemo {
 
         WebDriver d = new ChromeDriver();
 
-        d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        d.manage().timeouts().implicitlyWait(Objects.requireNonNull(Duration.ofSeconds(10)));
         d.manage().window().maximize();
 
         d.get("https://www.facebook.com/r.php");
 
         WebElement month = d.findElement(By.id("month"));
 
-        Select s = new Select(month);
         Select s = new Select(month);
 
         s.selectByVisibleText("May");
