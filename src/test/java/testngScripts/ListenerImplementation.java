@@ -12,35 +12,34 @@ import org.testng.ITestResult;
 import com.Actitime.generic.Library.Baseclass;
 import com.google.common.io.Files;
 
-
 public class ListenerImplementation extends Baseclass implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		
+
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		
+
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		TakesScreenshot t=(TakesScreenshot)driver;
-		File Src =t.getScreenshotAs(OutputType.FILE);
+		TakesScreenshot t = (TakesScreenshot) driver;
+		File Src = t.getScreenshotAs(OutputType.FILE);
 		File dest = new File("./Screenshot/" + result.getName() + ".png");
 		try {
 			Files.copy(Src, dest);
 		} catch (IOException e) {
-			  e.printStackTrace();
+			e.printStackTrace();
+			System.out.println("Error occurred while taking screenshot");
 		}
-		}
-
+	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		
+
 	}
 
 	@Override
@@ -50,17 +49,17 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		
+
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		
+
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		
+
 	}
 
 }
