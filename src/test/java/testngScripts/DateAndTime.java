@@ -9,7 +9,7 @@ public class DateAndTime {
 		Calendar c= Calendar.getInstance();
 		Date d= c.getTime();
 		System.out.println(d);	
-		SimpleDateFormat Sdf=new SimpleDateFormat("hh-mm-ss dd-mm-yyy");
+		SimpleDateFormat Sdf=new SimpleDateFormat("hh-mm-ss dd-MM-yyyy");
 		String dateandtime = Sdf.format(d);
 		System.out.print(dateandtime);
 	}
@@ -21,5 +21,6 @@ public String getDateAndTime() {
 	return dateandtime;
 	
 }
+
 }
 
