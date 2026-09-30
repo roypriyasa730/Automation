@@ -62,12 +62,10 @@ public class Baseclass {
     public void logoutfromactitime() {
 
         driver.findElement(
-                By.xpath("//button[@data-testid='popup_menu_button_profile']")
-        ).click();
+                By.xpath("//button[@data-testid='popup_menu_button_profile']")).click();
 
         driver.findElement(
-                By.xpath("//div[text()='Logout']")
-        ).click();
+                By.xpath("//div[text()='Logout']")).click();
 
         Reporter.log("logged out successfully", true);
     }
