@@ -25,7 +25,7 @@ public class MultipleWindow {
 	        driver.switchTo().window(id);
 	        driver.close();
 	       Thread.sleep(2000);
-	        
+	       driver.close();	        
 	        }
 
 	}
