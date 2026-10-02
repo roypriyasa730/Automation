@@ -53,6 +53,11 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
+		System.out.println("Test execution started");
+	} // This method is called before any test starts
+
+	@Override
+	public void onStart(ITestContext context) {
 
 	}
 
