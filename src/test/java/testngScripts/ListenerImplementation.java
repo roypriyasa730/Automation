@@ -2,6 +2,7 @@ package testngScripts;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
@@ -29,7 +30,7 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 		File Src = t.getScreenshotAs(OutputType.FILE);
 		File dest = new File("./Screenshot/" + result.getName() + ".png");
 		try {
-			Files.copy(Src, dest);
+			Files.copy(Objects.requireNonNull(Src), dest);
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("Error occurred while taking screenshot");
@@ -55,18 +56,5 @@ public class ListenerImplementation extends Baseclass implements ITestListener {
 	public void onStart(ITestContext context) {
 		System.out.println("Test execution started");
 	} // This method is called before any test starts
-
-	@Override
-	public void onStart(ITestContext context) {
-
-	}
-
-	@Override
-	public void onFinish(ITestContext context) {
-
-	}
-
-	@Override
-	public void onFinish(ITestContext context) {
 
 }
