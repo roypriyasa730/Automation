@@ -10,23 +10,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class MultipleWindow {
 
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver =new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-	        driver.get("https://demoapps.qspiders.com/ui?scenario=1");
+		driver.get("https://demoapps.qspiders.com/ui?scenario=1");
 
-	        driver.findElement(By.xpath("//section[text()='Popups']")).click();
-	        driver.findElement(By.xpath("//section[text()='Browser Windows']")).click();
-	        driver.findElement(By.xpath("//a[text()='Multiple Windows']")).click();
-            driver.findElement(By.xpath("//button[text()='Shop Now']")).click();
-	        Set<String> allWinId = driver.getWindowHandles();
-	        for (String id : allWinId) {
-	        driver.switchTo().window(id);
-	        driver.close();
-	       Thread.sleep(2000);
-	       driver.close();	        
-	        }
+		driver.findElement(By.xpath("//section[text()='Popups']")).click();
+		driver.findElement(By.xpath("//section[text()='Browser Windows']")).click();
+		driver.findElement(By.xpath("//a[text()='Multiple Windows']")).click();
+		driver.findElement(By.xpath("//button[text()='Shop Now']")).click();
+		Set<String> allWinId = driver.getWindowHandles();
+		for (String id : allWinId) {
+			driver.switchTo().window(id);
+			driver.close();
+			driver.switchTo().window(id);
+			Thread.sleep(2000);
+			driver.close();
+		}
 
 	}
 
