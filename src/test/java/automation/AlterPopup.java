@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AlterPopup {
 
-	public static void main(String[] args)throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
+    public static void main(String[] args) throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://demoapps.qspiders.com/ui?scenario=1");
@@ -21,10 +21,8 @@ public class AlterPopup {
         driver.findElement(By.id("deleteButton")).click();
 
         Alert a = driver.switchTo().alert();
-        a.accept();  
+        a.accept();
         driver.quit();
-	
+
     }
-	}
-
-
+}
