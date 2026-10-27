@@ -15,6 +15,7 @@ public class AlterPopup {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://demoapps.qspiders.com/ui?scenario=1");
         driver.findElement(By.xpath("//section[text()='Popups']")).click();
+        driver.findElement(By.xpath("//section[text()='Popups']")).click();
         driver.findElement(By.xpath("//section[text()='Javascript']")).click();
         driver.findElement(By.xpath("//td[text()='Levis Shirt']/preceding-sibling::td")).click();
 
