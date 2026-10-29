@@ -15,7 +15,6 @@ public class ExplicitWaitDemo {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		wait.until(d -> !d.getTitle().isEmpty());
-
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		System.out.println("Title: " + driver.getTitle());
 
