@@ -20,7 +20,8 @@ public class FluentWaitDemo {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//section[text()='Dropdown']")));
 
 		driver.findElement(By.xpath("//section[text()='Dropdown']")).click();
-		driver.findElement(null);
+		driver.findElement(By.xpath("//option[text()='Option 2']")).click();
+
 		driver.quit();
 	}
 
