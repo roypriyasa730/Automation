@@ -18,7 +18,6 @@ public class AlllinksForSearching {
 		driver.findElement(By.xpath("//span[@role='button']")).click();
 		List<WebElement> alllinks = driver.findElements(By.xpath("//a"));
 		driver.quit();
-
 	}
 
 }
