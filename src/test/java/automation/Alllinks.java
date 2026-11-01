@@ -24,7 +24,6 @@ public class Alllinks {
 		for (int i = 0; i < count; i++) {
 			String text = alllinks.get(i).getText();
 			System.out.println((i + 1) + ") " + text);
-
 		}
 
 		driver.quit();
