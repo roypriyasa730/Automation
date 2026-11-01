@@ -16,7 +16,7 @@ public class Alllinks {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
-		
+
 		driver.findElement(By.xpath("//span[@role='button']")).click();
 		List<WebElement> alllinks = driver.findElements(By.xpath("//a"));
 		int count = alllinks.size();
@@ -24,12 +24,9 @@ public class Alllinks {
 		for (int i = 0; i < count; i++) {
 			String text = alllinks.get(i).getText();
 			System.out.println((i + 1) + ") " + text);
-			
 
 		}
-	
-		
-	driver.close();
+
 		driver.quit();
 	}
 }
