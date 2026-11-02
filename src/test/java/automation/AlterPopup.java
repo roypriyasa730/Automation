@@ -18,7 +18,7 @@ public class AlterPopup {
         driver.findElement(By.xpath("//section[text()='Popups']")).click();
         driver.findElement(By.xpath("//section[text()='Javascript']")).click();
         driver.findElement(By.xpath("//td[text()='Levis Shirt']/preceding-sibling::td")).click();
-
+        driver.findElement(By.xpath("//td[text()='Levis Shirt']/following-sibling::td[2]")).click();
         driver.findElement(By.id("deleteButton")).click();
 
         Alert a = driver.switchTo().alert();
