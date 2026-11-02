@@ -10,6 +10,7 @@ import java.util.List;
 public class Alllinks {
 
 	public static void main(String[] args) {
+
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
