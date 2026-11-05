@@ -23,6 +23,7 @@ public class ExplicitWaitExample {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.name("q")));
+        driver.findElement(By.name("q")).sendKeys("Selenium");
 
         driver.close();
     }
