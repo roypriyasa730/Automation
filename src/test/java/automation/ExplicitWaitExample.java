@@ -24,5 +24,6 @@ public class ExplicitWaitExample {
                 By.name("q")));
 
         driver.quit();
+        driver.close();
     }
 }
