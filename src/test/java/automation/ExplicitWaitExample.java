@@ -23,7 +23,6 @@ public class ExplicitWaitExample {
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.name("q")));
 
-        driver.quit();
         driver.close();
     }
 }
