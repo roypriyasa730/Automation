@@ -8,6 +8,7 @@ public class Dropdown {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://trytestingthis.netlify.app/");
 		driver.manage().window().maximize();
+		driver.quit();
 	}
 
 }
