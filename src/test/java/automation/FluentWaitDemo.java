@@ -21,6 +21,7 @@ public class FluentWaitDemo {
 
 		driver.findElement(By.xpath("//section[text()='Dropdown']")).click();
 		driver.findElement(By.xpath("//option[text()='Option 2']")).click();
+		driver.findElement(By.xpath("//option[text()='Option 3']")).click();
 
 		driver.quit();
 	}
