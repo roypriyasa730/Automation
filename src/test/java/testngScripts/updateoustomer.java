@@ -1,10 +1,9 @@
 package testngScripts;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 
 public class updateoustomer {
 	@Test(priority = 5, dependsOnMethods = "deleteCoustomer")
