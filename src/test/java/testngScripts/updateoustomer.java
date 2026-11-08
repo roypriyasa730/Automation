@@ -37,5 +37,9 @@ public class updateoustomer {
 	public void vrifyCoustomer() {
 		Reporter.log("Coustomer Vrify successfully", true);
 	}
+	@Test ()
+	public void (){
+		Reporter.log(null);
+	}
 
 }
